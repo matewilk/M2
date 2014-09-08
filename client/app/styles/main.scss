@@ -25,6 +25,14 @@ nav li, nav ul {
 }
 nav li, nav a {
   display: block;
+  position: absolute;
+  top:0;
+  background: rgb(54, 25, 25); /* Fall-back for browsers that don't support rgba */
+  background: rgba(54, 25, 25, 0.15);
+}
+nav li:first-child {
+  padding: 20px;
+  visibility: visible;
 }
 nav a {
   padding: 20px;
@@ -32,11 +40,93 @@ nav a {
   text-decoration: none;
 }
 a:hover {
-  background: #fff;
+  background: rgb(0, 172, 127);
+  background: rgba(0, 172, 127, 0.15);
 }
 a.active {
-  background: #00AC7F;
   color: #fff;
+  background: rgb(0, 172, 127);
+  background: rgba(0, 172, 127, 0.75);
+}
+//nav li.menu-active:nth-child(1) {
+//  top: 0;
+//  opacity:1;
+//  visibility: visible;
+//  webkit-transition: top 1s, opacity 1s;
+//  -moz-transition: top 1s, opacity 1s;
+//  -o-transition: top 1s, opacity 1s;
+//  -ms-transition: top 1s, opacity 1s;
+//  transition: top 1s, opacity 1s;
+//}
+nav li.menu-active:nth-child(2) {
+  top: 80px;
+  opacity:1;
+  visibility: visible;
+  webkit-transition: top 1s, opacity 1s;
+  -moz-transition: top 1s, opacity 1s;
+  -o-transition: top 1s, opacity 1s;
+  -ms-transition: top 1s, opacity 1s;
+  transition: top 1s, opacity 1s;
+}
+nav li.menu-active:nth-child(3) {
+  top: 160px;
+  opacity:1;
+  visibility: visible;
+  webkit-transition: top 2s, opacity 2s;
+  -moz-transition: top 2s, opacity 2s;
+  -o-transition: top 2s, opacity 2s;
+  -ms-transition: top 2s, opacity 2s;
+  transition: top 2s, opacity 2s;
+}
+nav li.menu-active:nth-child(4) {
+  top: 240px;
+  opacity:1;
+  visibility: visible;
+  webkit-transition: top 3s, opacity 3s;
+  -moz-transition: top 3s, opacity 3s;
+  -o-transition: top 3s, opacity 3s;
+  -ms-transition: top 3s, opacity 3s;
+  transition: top 3s, opacity 3s;
+}
+
+nav li.inactive:nth-child(1) {
+  top: 0;
+  opacity: 1;
+  webkit-transition: top 1s, opacity 1s, visibility 1s;
+  -moz-transition: top 1s, opacity 1s, visibility 1s;
+  -o-transition: top 1s, opacity 1s, visibility 1s;
+  -ms-transition: top 1s, opacity 1s, visibility 1s;
+  transition: top 1s, opacity 1s, visibility 1s;
+}
+nav li.inactive:nth-child(2) {
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+  webkit-transition: top 2s, opacity 1s, visibility 1s;
+  -moz-transition: top 2s, opacity 1s, visibility 1s;
+  -o-transition: top 2s, opacity 1s, visibility 1s;
+  -ms-transition: top 2s, opacity 1s, visibility 1s;
+  transition: top 2s, opacity 1s, visibility 1s;
+}
+nav li.inactive:nth-child(3) {
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+  webkit-transition: top 1s, opacity 1s, visibility 1s;
+  -moz-transition: top 1s, opacity 1s, visibility 1s;
+  -o-transition: top 1s, opacity 1s, visibility 1s;
+  -ms-transition: top 1s, opacity 1s, visibility 1s;
+  transition: top 1s, opacity 1s, visibility 1s;
+}
+nav li.inactive:nth-child(4) {
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+  webkit-transition: top 1s, opacity 1s, visibility 1s;
+  -moz-transition: top 1s, opacity 1s, visibility 1s;
+  -o-transition: top 1s, opacity 1s, visibility 1s;
+  -ms-transition: top 1s, opacity 1s, visibility 1s;
+  transition: top 1s, opacity 1s, visibility 1s;
 }
 //navigation-end
 

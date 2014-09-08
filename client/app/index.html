@@ -16,7 +16,7 @@
     <!-- endbuild -->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
   </head>
-  <body ng-app="M2App">
+  <body data-ng-app="M2App">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -25,13 +25,14 @@
     <div>
         <nav>
             <ul>
-                <li><a href="#section-main" du-smooth-scroll du-scrollspy>Section 1</a></li>
-                <li><a href="#section-2" du-smooth-scroll du-scrollspy>Section 2</a></li>
-                <li><a href="#section-3" du-smooth-scroll du-scrollspy>Section 3</a></li>
+                <li data-ng-click="isActive = !isActive" ng-class="isActive ? 'menu-active' : 'inactive'">Section Main</li>
+                <li ng-class="isActive ? 'menu-active' : 'inactive'"><a href="#section-main" du-smooth-scroll du-scrollspy>Section 1</a></li>
+                <li ng-class="isActive ? 'menu-active' : 'inactive'"><a href="#section-2" du-smooth-scroll du-scrollspy>Section 2</a></li>
+                <li ng-class="isActive ? 'menu-active' : 'inactive'"><a href="#section-3" du-smooth-scroll du-scrollspy>Section 3</a></li>
             </ul>
         </nav>
 
-        <div ng-view=""></div>
+        <div data-ng-view=""></div>
 
         <div class="footer">
             <p><span class="fa fa-heart"></span> from the Yeoman team</p>
