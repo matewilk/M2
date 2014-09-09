@@ -58,15 +58,18 @@ a.active {
 //  -ms-transition: top 1s, opacity 1s;
 //  transition: top 1s, opacity 1s;
 //}
-nav li.menu-active:nth-child(2) {
-  top: 80px;
-  opacity:1;
-  visibility: visible;
+nav li:nth-child(2) {
   webkit-transition: top 1s, opacity 1s;
   -moz-transition: top 1s, opacity 1s;
   -o-transition: top 1s, opacity 1s;
   -ms-transition: top 1s, opacity 1s;
   transition: top 1s, opacity 1s;
+  transition-delay: 1s;
+  &.menu-active {
+    top: 80px;
+    opacity:1;
+    visibility: visible;
+  }
 }
 nav li.menu-active:nth-child(3) {
   top: 160px;
