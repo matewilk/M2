@@ -31,7 +31,9 @@ nav li, nav a {
   background: rgba(54, 25, 25, 0.15);
 }
 nav li:first-child {
-  padding: 20px;
+  width: 87px;
+  height: 80px;
+  padding: 25px;
   visibility: visible;
 }
 nav a {
@@ -131,9 +133,9 @@ nav li.inactive:nth-child(4) {
 //navigation-end
 
 //hamburger menu from codepen http://codepen.io/anon/pen/HeKxE
-#nav-toggle { position: absolute; left: 50%; top: 50%; }
+#nav-toggle { top: 50%; }
 
-#nav-toggle { cursor: pointer; padding: 10px 35px 16px 0px; }
+#nav-toggle { cursor: pointer; padding: 0; }
 #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
   cursor: pointer;
   border-radius: 1px;
