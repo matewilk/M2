@@ -25,7 +25,7 @@
     <div>
         <nav>
             <ul>
-                <li data-ng-click="isActive = !isActive" ng-class="isActive ? 'menu-active' : 'inactive'">Section Main</li>
+                <li data-ng-click="isActive = !isActive" ng-class="isActive ? 'menu-active' : 'inactive'"><a ng-class="isActive ? 'hamburger-active' : ''" id="nav-toggle"><span></span></a></li>
                 <li ng-class="isActive ? 'menu-active' : 'inactive'"><a href="#section-main" du-smooth-scroll du-scrollspy>Section 1</a></li>
                 <li ng-class="isActive ? 'menu-active' : 'inactive'"><a href="#section-2" du-smooth-scroll du-scrollspy>Section 2</a></li>
                 <li ng-class="isActive ? 'menu-active' : 'inactive'"><a href="#section-3" du-smooth-scroll du-scrollspy>Section 3</a></li>
